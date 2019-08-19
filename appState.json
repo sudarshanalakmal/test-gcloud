@@ -1,0 +1,100 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "b73b9cdb-0514-4cba-9ef7-7c59b71b3bd1": {
+        "id": "b73b9cdb-0514-4cba-9ef7-7c59b71b3bd1",
+        "parent": null,
+        "name": "test-gcloud",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "79d3450e-9fe5-4b54-a5b9-852614841f22"
+        ],
+        "isRemovable": false,
+        "filePath": "test-gcloud"
+      },
+      "79d3450e-9fe5-4b54-a5b9-852614841f22": {
+        "id": "79d3450e-9fe5-4b54-a5b9-852614841f22",
+        "parent": "b73b9cdb-0514-4cba-9ef7-7c59b71b3bd1",
+        "name": "function.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "test-gcloud/function.js",
+        "code": "exports.handler = function(request, response) {\n    \n    response.send({\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "3e8cf654-bfb6-4845-81e9-e9b13530fecb": {
+        "id": "3e8cf654-bfb6-4845-81e9-e9b13530fecb",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js",
+        "code": "// This file is used to register all your cloud functions in GCP.\n// DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\nexports.testGcloudfunction = require(\"./test-gcloud/function.js\").handler;"
+      },
+      "212f259a-0cdb-4601-8936-d8792d921100": {
+        "id": "212f259a-0cdb-4601-8936-d8792d921100",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py",
+        "code": "# This file is used to register all your cloud functions in GCP.\n# DO NOT EDIT/DELETE THIS, UNLESS YOU KNOW WHAT YOU ARE DOING.\n\n"
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "b73b9cdb-0514-4cba-9ef7-7c59b71b3bd1",
+    "openFiles": [
+      "79d3450e-9fe5-4b54-a5b9-852614841f22"
+    ],
+    "currentFileId": "79d3450e-9fe5-4b54-a5b9-852614841f22",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "test-gcloud",
+    "projectDescription": "this is a testing project",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-central1",
+    "platform": "GCP",
+    "platformRegions": {},
+    "lastSave": 1566190611951
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "test-gcloud",
+      "url": "https://github.com/sudarshanalakmal/test-gcloud"
+    }
+  }
+}
